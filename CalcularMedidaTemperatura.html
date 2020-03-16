@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Calcule a temperatura</title>	
+	<script type="text/javascript">
+		
+function calcular(){
+			var celsius = document.getElementById('celsius').value;
+
+				var temperatura = document.getElementById('temperatura').value;
+
+celsius = parseFloat(celsius);
+var resultado= null;
+
+switch (temperatura){
+
+	case '1': 
+	resultado = ((celsius / 5) * 9) +32;
+
+	break;
+
+	case '2':
+	resultado =celsius + 273;
+	break;
+
+
+
+
+}document.getElementById('resultado').value = resultado;
+}
+	</script>
+
+	<!-- <script language="text/javascript" scr="meu_javascript.js"></script> <!-->
+</head>
+<body> 
+	<div> <h1>Transformando graus Celsius </h1></div>
+	</div><input id="celsius" type="text" />
+	<select id="temperatura">
+		
+		<option value="">--Selecione uma operação</option>
+		<option value="1">Fahrenheit</option>
+		<option value="2">Kelvin</option>
+
+						
+
+
+	</select>
+<button type="button" class="btn btn-lg btn-primary pull-right" onclick="calcular()">Calcular</button>
+
+ <input id="resultado" type="text" class="form-control" readonly/>
+	
+
+
+
+
+
+	</div>
+
+</body>
+</html>
