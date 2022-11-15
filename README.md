@@ -1,2 +1,3 @@
-# JavaS
-miniprojetos JavaScript e códigos do curso online
+
+miniprojetos utilizando JavaScript e HTML 
+códigos do curso online
